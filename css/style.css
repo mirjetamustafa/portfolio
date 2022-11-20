@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+body{
+    overflow-x: hidden;
+}
+/* Header */
+.collapse {
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.nav-link{
+    color: #aaa;
+    font-size: 16px;
+}
+.nav-link:hover{
+    color: #fff;
+}
+nav .logo img{
+    width: 100px;
+}
+/* 3ddd14 */
+.active{
+    color: #3ddd14;
+}
+/* Header end */
+
+/* Section 1 */
+.bg{
+    background-color: #6f7a8a;
+    padding-bottom: 20px;
+}
+
+.text{
+    font-size: 50px;
+    padding-left: 30%;
+    padding-top: 55px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    letter-spacing: 13px;
+    line-height: 70px;
+}
+.paragraf{
+    font-family: 'Roboto Slab', serif;
+    padding-left: 30%;
+    font-weight: 500;
+    letter-spacing: 6px;
+    line-height: 60px;
+}
+.cv{
+    background-color: #333b50;
+    display: flex;
+    justify-content: center;
+    margin-left: 250px;
+    width: 60%;
+    margin-bottom: -15%;
+    padding: 40px;
+}
+.btn{
+    border: #3ddd14 1px solid;
+    padding: 10px 15px;
+    font-weight: 100;
+    font-size: 15px;
+}
+.btn:hover{
+    background-color: #3ddd14;
+}
+/* Section 1 end */
+
+/* Section 2 */
+.portfolio{
+    background-image: url(../img/computers.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.portfolio-1{
+    margin-top: 250px;
+    font-family: 'Roboto Slab', serif;
+}
+.para-1{
+    font-weight: 100;
+}
+.progress-bar{
+    width: 0;
+}
+.html{
+    background: #3ddd14;
+    animation: html 1s linear forwards;
+}
+@keyframes html{
+    100%{
+        width: 30%;
+    }
+}
+.javascript{
+    background: #3ddd14;
+    animation: javascript 1s linear forwards;
+}
+@keyframes javascript{
+    100%{
+        width: 15%;
+    }
+}
+.wordpress{
+    background: #3ddd14;
+    animation: wordpress 1s linear forwards;
+}
+@keyframes wordpress{
+    100%{
+        width: 25%;
+    }
+}
+.mobile{
+    display: none;
+}
+/* Section 2 end */
+
+/* Section 3 */
+.bg-1{
+    background-color: #6f7a8a;
+    height: 700px;
+    margin-top: 57%;
+}
+.portfolio-2 {
+    padding-top: 50px;
+}
+.portfolio-2 h1{
+    margin-top: 250px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 5px;
+}
+.portfolio-2 p{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.portfolio-2 p a{
+    text-decoration: none;
+    color: #ddd;
+}
+.owl-theme{
+    padding-top: 100px;
+}
+
+.container{
+    padding: 1em 0;
+    float: left;
+    width: 70%;
+  }  
+.container .title{
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+  
+  .content-image{
+    width: 100%;
+  }
+  
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  
+  .content-details h3{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+  .fadeIn-top{
+    top: 20%;
+  }
+  
+  
+/* Section 3 end */
+
+/* Section 4 */
+.experience{
+    background-image: url(../img/bg-2.jpg);
+    background-size: cover;
+    background-attachment: inherit;
+    color: white;
+    height: 1300px;
+    width: 100%;
+}
+.experience::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1300px;
+    background-color: #444;
+    position: absolute;
+    left: 0;
+    opacity: 1;
+    z-index: 0;
+    mix-blend-mode: hard-light;
+}
+.experience > *{
+    z-index: 10;
+    position: relative;
+}
+.after{
+    position: relative;
+}
+.after::before{
+    content: "";
+    display: block;
+    background-color: #3ddd14;
+    border-radius: 50%;
+    position: absolute;
+    width: 2%;
+    padding: 10px;
+    margin-left: 95.5%;
+    margin-top: 50px;
+}
+
+.before{
+    position: relative;
+}
+.before::before{
+    content: "";
+    display: block;
+    background-color: #3ddd14;
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    margin-left: -18%;
+    margin-top: 150px;
+    transform: rotate(90deg);
+}
+
+.after-1{
+    position: relative;
+}
+.after-1::before{
+    content: "";
+    display: block;
+    background-color: #3ddd14;
+    border-radius: 50%;
+    position: absolute;
+    width: 2%;
+    padding: 10px;
+    margin-left: 90%;
+    margin-top: 10px;
+}
+
+.before-1{
+    position: relative;
+}
+.before-1::before{
+    content: "";
+    display: block;
+    background-color: #3ddd14;
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    margin-left: -18%;
+    margin-top: 100px;
+    transform: rotate(90deg);
+}
+
+.after-2{
+    position: relative;
+}
+.after-2::before{
+    content: "";
+    display: block;
+    background-color: #3ddd14;
+    border-radius: 50%;
+    position: absolute;
+    width: 2%;
+    padding: 10px;
+    margin-left: 95.5%;
+    margin-top: -10px;
+}
+
+.before-2{
+    position: relative;
+}
+.before-2::before{
+    content: "";
+    display: block;
+    background-color: #3ddd14;
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    margin-left: -18%;
+    margin-top: 80px;
+    transform: rotate(90deg);
+}
+
+.after-3{
+    position: relative;
+}
+.after-3::before{
+    content: "";
+    display: block;
+    background-color: #3ddd14;
+    border-radius: 50%;
+    position: absolute;
+    width: 2%;
+    padding: 10px;
+    margin-left: 90%;
+    margin-top: -10px;
+}
+
+.before-3{
+    position: relative;
+}
+.before-3::before{
+    content: "";
+    display: block;
+    background-color: #3ddd14;
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    margin-left: -18%;
+    margin-top: 100px;
+    transform: rotate(90deg);
+}
+
+.before h3{
+    font-weight: 300;
+}
+.before h6{
+    font-size: 14px;
+}
+.after-1 h3{
+    font-weight: 300;
+}
+.after-1 h6{
+    font-size: 14px;
+}
+.data{
+    color: #3ddd14;
+}
+/* Section 4 end */
+
+/* Footer */
+footer{
+    background-color: #333b50;
+    padding: 10px;
+}
+.social{
+    display: inline;
+    
+}
+footer .social a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    font-size: 24px;
+}
+/* Footer end */
+
+
+@media screen and (max-width: 640px){
+    /* .container{
+      display: block;
+      width: 100%;
+    } */
+    /* Section 1 */
+    .text{
+        padding-left: 10%;
+        padding-top: 20px;
+        justify-content: center;
+        /* font-family: 'Roboto Slab', serif;
+        font-weight: 900;
+        letter-spacing: 13px;
+        line-height: 70px; */
+    }
+    .paragraf{
+        padding-left: 10%;
+    }
+    .cv{
+        margin-left: 50px;
+        width: 80%;
+        margin-bottom: 0;
+    }
+    /* Section 1 end */
+    /* Section 2 */
+    .mobile{
+        display: block;
+        padding: 10px;
+    }
+    .pc{
+        display: none;
+    }
+    .portfolio{
+        margin-top: -50px;
+        background-attachment:unset;
+        position: relative;
+        z-index: 1;
+        padding-bottom: 30px;
+    }
+    
+    
+    .portfolio-1{
+        margin-top: 0px;
+        font-family: 'Roboto Slab', serif;
+    }
+    /* Section 2 end */
+    /* Section 3 */
+    .bg-1{
+        /* background-color: #6f7a8a;
+        height: 700px; */
+        margin-top: 0%;
+    }
+    /* Section 3 end */
+  }
+  
+  /* @media screen and (min-width: 900px){
+    .container{
+      width: 33.33333%;
+    }
+  } */
+  
